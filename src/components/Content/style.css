@@ -1,0 +1,35 @@
+.pagination {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__link {
+  padding: 10px;
+  background-color: rgb(162, 61, 234);
+  color: white;
+  border-radius: 5%;
+}
+
+.pagination__link--active {
+  padding: 2px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.pagination__link--disabled {
+  padding: 2px;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  height: 100%;
+  right: 0;
+  background-color: white;
+}
